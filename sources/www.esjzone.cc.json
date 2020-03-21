@@ -1,15 +1,15 @@
 {
-	"name": "ESJ",
+	"name": "ESJ（只能看部分）",
     "url": "www.esjzone.cc",
-    "version": 0.01,
+    "version": 104,
     "search": {
-		"url": "https://www.esjzone.cc/tags/${key}",
+		"url": "https://www.esjzone.cc/tags/${key}/",
 		"charset": "utf-8",
-		"list": "div.row.product-list-inline-small > div",
-		"name": "div.caption-txt > a",
-        "author": "
-        "cover": ".result-game-item-pic > a > img",
-        "detail": "div.coverMask>a"
+		"list": "div.row.product-list-inline-small",
+		"name": "div.row.product-list-inline-small>div",
+        "author": "",
+        "cover": "div.coverMask>a>img",
+        "detail": "div.caption-txt>a"
     },
     "detail": {
         "name": "div.col-xs-12 > h3",
@@ -18,16 +18,19 @@
         "summary": "div.row.m-b-15.book_description",
         "status": "",
         "update": "li:contains(最新更新)>span",
-        "lastChapter": "",
+        "lastChapter": "div.row.tab-pane.active>a:last-child",
         "catalog": ""
     },
     "catalog": {
-        "list": "div.row.tab-pane.active>a>p",
-        "name": "div.row.tab-pane.active>a",
-        "chapter": "div.row.tab-pane.active>a"
+        "list": ".row.tab-pane.active",
+        "booklet": {
+            "name": "p",
+            "list": "a"
+        },
+        "name": "p",
+        "chapter": "a"
     },
     "chapter": {
         "content": "div.col-xs-12.m-b-30.forum-content"
-        ]
     }
 }
