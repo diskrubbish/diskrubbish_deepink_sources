@@ -1,0 +1,33 @@
+{
+	"name": "ESJ",
+    "url": "www.esjzone.cc",
+    "version": 0.01,
+    "search": {
+		"url": "https://www.esjzone.cc/tags/${key}",
+		"charset": "utf-8",
+		"list": "div.row.product-list-inline-small > div",
+		"name": "div.caption-txt > a",
+        "author": "
+        "cover": ".result-game-item-pic > a > img",
+        "detail": "div.coverMask>a"
+    },
+    "detail": {
+        "name": "div.col-xs-12 > h3",
+        "author": "li:contains(作者)>span",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "div.row.m-b-15.book_description",
+        "status": "",
+        "update": "li:contains(最新更新)>span",
+        "lastChapter": "",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "div.row.tab-pane.active>a>p",
+        "name": "div.row.tab-pane.active>a",
+        "chapter": "div.row.tab-pane.active>a"
+    },
+    "chapter": {
+        "content": "div.col-xs-12.m-b-30.forum-content"
+        ]
+    }
+}
