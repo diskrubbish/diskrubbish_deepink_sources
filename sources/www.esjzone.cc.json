@@ -31,6 +31,6 @@
         "chapter": "a@replace->$>?see_lz=1"
     },
     "chapter": {
-        "content": "div.col-xs-12.m-b-30.forum-content,.d_post_content"
+        "content": "div.col-xs-12.m-b-30.forum-content,div.d_post_content_main"
     }
 }
