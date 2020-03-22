@@ -1,11 +1,11 @@
 {
     "name": "小说柜",
     "url": "www.xiaoshuogui.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.xiaoshuogui.com/modules/article/search.php@post->searchkey=${key}",
         "charset": "utf-8",
-        "list": "div.list_center>div[id=sitebox]",
+        "list": "dl[id=nr]",
         "name": "dl>dd>h3>a",
         "author": "",
         "summary": "dl>dd.book_des",
