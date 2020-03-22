@@ -1,0 +1,33 @@
+{
+    "name": "小说柜",
+    "url": "www.xiaoshuogui.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.xiaoshuogui.com/modules/article/search.php@post->searchkey=${key}",
+        "charset": "utf-8",
+        "list": "div.list_center>div[id=sitebox]",
+        "name": "dl>dd>h3>a",
+        "author": "",
+        "summary": "dl>dd.book_des",
+        "cover": "dl>dt>a>img",
+        "detail": "dl>dt>a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "div[id=bookintro]",
+        "status": "div[id=count]>ul>li:eq(2)",
+        "update": "div[id=count]>ul>li:eq(3)",
+        "lastChapter": "meta[property=og:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "ul[id=chapterList]",
+        "name": "li",
+        "chapter": "li>a"
+    },
+    "chapter": {
+        "content": "div[id=mlfy_main_text]"
+    }
+}
