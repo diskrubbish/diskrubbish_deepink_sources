@@ -1,0 +1,36 @@
+{
+    "name": "动漫之家",
+    "url": "v3api.dmzj.com",
+    "version": 100,
+    "search": {
+        "url": "https://v3api.dmzj.com/search/show/1/${key}/0.json",
+        "charset": "utf-8",
+        "list": "$.*",
+        "name": "$title||$.name",
+        "author": "$.authors",
+        "cover": "$.cover",
+        "detail": "/novel/${$.id}.json"
+    },
+    "detail": {
+        "name": "$.name",
+        "author": "$.authors",
+        "cover": "$.cover",
+        "summary": "$.introduction",
+        "lastChapter": "$.last_update_chapter_name",
+        "status": "$.status",
+        "catalog": "/novel/chapter/${$..id}@header->type:json"
+        
+    },
+    "catalog": {
+        "list": "$.*",
+        "booklet": {
+            "name": "$.volume_name",
+            "list": "$.chapters"
+        },
+        "name": "$.chapter_name",
+        "chapter": "/novel/download/999999_/${$.id}_/${$.chapter_id}"
+    },
+    "chapter": {
+        "content": ""
+    }
+}
