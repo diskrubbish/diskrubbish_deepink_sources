@@ -1,7 +1,7 @@
 {
     "name": "ESJ",
     "url": "www.esjzone.cc",
-    "version": 106,
+    "version": 107,
     "search": {
         "url": "https://www.esjzone.cc/tags/${key}/",
         "charset": "utf-8",
@@ -31,6 +31,7 @@
         "chapter": "a@replace->$>?see_lz=1"
     },
     "chapter": {
-        "content": "div.col-xs-12.m-b-30.forum-content,div.d_post_content_main"
+        "content": "div.col-xs-12.m-b-30.forum-content,div.d_post_content_main>div.p_content,div.core_reply.j_lzl_wrapper>div> div > span:matchesOwn(楼)",
+        "purify": ["该楼层疑似违规已被系统折叠","隐藏此楼","查看此楼"]
     }
 }
