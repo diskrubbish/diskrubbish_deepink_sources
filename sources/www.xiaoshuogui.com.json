@@ -1,7 +1,7 @@
 {
     "name": "小说柜",
     "url": "www.xiaoshuogui.com",
-    "version": 103,
+    "version": 104,
     "search": {
         "url": "https://www.xiaoshuogui.com/modules/article/search.php@post->searchkey=${key}",
         "charset": "gbk",
@@ -9,7 +9,7 @@
         "name": "dl>dd>h3>a",
         "author": "",
         "summary": "dl>dd.book_des",
-        "cover": "dt>a>img",
+        "cover": "dt>a>img@attr->img _src",
         "detail": "dl>dt>a"
     },
     "detail": {
@@ -28,6 +28,6 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": "div[id=mlfy_main_text]"
+        "content": "div[id=mlfy_main_text]>div[id=TextContent]"
     }
 }
