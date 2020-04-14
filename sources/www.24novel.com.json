@@ -28,6 +28,6 @@
         "chapter": "a@attr->href"
     },
     "chapter": {
-        "content": "div[id=content]",
+        "content": "div[id=content]"
     }
 }
