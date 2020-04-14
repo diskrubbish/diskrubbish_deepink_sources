@@ -1,9 +1,9 @@
 {
-    "name": "第二书包网(需要梯子)",
+    "name": "第二书包网（需要梯子）",
     "url": "www.shubao202.com",
     "version": 104,
     "search": {
-        "url": "http://www.shubao202.com/search@post->search=${key}",
+        "url": "http://www.shubao202.com/search@post->keyword=${key}",
         "charset": "gbk",
         "list": "div.listbody",
         "name": "table>tbody>tr>td>h4",
