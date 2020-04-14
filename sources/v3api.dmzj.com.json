@@ -27,7 +27,7 @@
             "name": "$.volume_name",
             "list": "$.chapters"
         },
-        "name": "$*.chapter_name",
+        "name": "$.*.chapter_name",
         "chapter": "/novel/download/999999_${$.id}_${$.chapters.*.chapter_id}"
     },
     "chapter": {
