@@ -1,0 +1,35 @@
+{
+    "name": "第二书包网(需要梯子)",
+    "url": "www.shubao202.com",
+    "version": 104,
+    "search": {
+        "url": "http://www.shubao202.com/search@post->search=${key}",
+        "charset": "gbk",
+        "list": "div.listbody",
+        "name": "table>tbody>tr>td>h4",
+        "author": "",
+        "summary": "table>tbody>tr>td[class=itd]",
+        "cover": "table>tbody>tr>td>a>img@attr->img src",
+        "detail": "table>tbody>tr>td>a[target=_blank]@attr->href"
+    },
+    "detail": {
+        "name": "div.ilbox>h1",
+        "author": "tr:eq(1)>td:eq(3)",
+        "cover": "tr>td:eq(0)>img:eq(0)@attr->img src",
+        "summary": "div[class=summ]",
+        "status": "tr:eq(0)>td:eq(4)",
+        "update": "tr:eq(3)>td:eq(3)",
+        "lastChapter": "div.mulu>ul>li:nth-last-child(2)",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "div.mulu>ul",
+        "name": "li:not(:nth-last-child(1))",
+        "chapter": "li:not(:nth-last-child(1))>a@attr->href"
+    },
+    "chapter": {
+        "content": "div[class=mcc]",
+        "purify": ["免费TXT小说下载https://Www.Shubao201.Com"]
+        
+    }
+}
