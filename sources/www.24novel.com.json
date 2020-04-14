@@ -1,0 +1,33 @@
+{
+    "name": "时时小说网（需要梯子）",
+    "url": "http://www.24novel.com/",
+    "version": 104,
+    "search": {
+        "url": "http://www.24novel.com/modules/article/search.php@post->searchkey=${key}",
+        "charset": "gbk",
+        "list": "tr:gt(0)",
+        "name": "td[class=odd]:eq(0)",
+        "author": "tr:gt(0)>td[class=odd]:eq(2)",
+        "summary": "",
+        "cover": "",
+        "detail": "tr:gt(0)>td[class=odd]>a@attr->href"
+    },
+    "detail": {
+        "name": "td[align=center][valign=middle]",
+        "author": "tr:eq(1)>td:eq(3)@replace->作    者：->",
+        "cover": "a>img@attr->src",
+        "summary": "td[valign=top]:has(br)",
+        "status": "tr:nth-child(1) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)@replace->文章状态：->",
+        "update": "tr:nth-child(1) > td > table > tbody > tr:nth-child(3) > td:nth-child(1)@replace->最后更新：->",
+        "lastChapter": "td[width=80%]>a",
+        "catalog": "td:nth-child(1) > ul > li:nth-child(1) > a@attr->href"
+    },
+    "catalog": {
+        "list": "td[class=ccss]",
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "div[id=content]",
+    }
+}
