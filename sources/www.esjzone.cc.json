@@ -1,37 +1,37 @@
 {
     "name": "ESJ",
     "url": "www.esjzone.cc",
-    "version": 107,
+    "version": 109,
     "search": {
         "url": "https://www.esjzone.cc/tags/${key}/",
         "charset": "utf-8",
-        "list": "div.row.product-list-inline-small",
-        "name": "div>div>div.caption>div.caption-txt",
+        "list": "div.row>div>div.row",
+        "name": "div>div>div>h5",
         "author": "",
-        "cover": "div.coverMask>a>img",
-        "detail": "div.caption-txt>a"
+        "cover": "div>div>a>div>div>img@attr->data-src",
+        "detail": "div>div>div>h5>a@attr->href"
     },
     "detail": {
-        "name": "div.col-xs-12 > h3",
-        "author": "li:contains(作者)>span",
-        "cover": "meta[property=og:image]@attr->content",
-        "summary": "div.row.m-b-15.book_description",
+        "name": "div.col-md-9.book-detail > h2",
+        "author": "ul[class=list-unstyled mb-2 book-detail]> li:nth-child(1) > a",
+        "cover": "div.col-md-3 > div > a > img@attr->src",
+        "summary": "div.description",
         "status": "",
         "update": "li:contains(最新更新)>span",
-        "lastChapter": "div.row.tab-pane.active>a:last-child",
+        "lastChapter": "div[id = chapterList] >a:last-child",
         "catalog": ""
     },
     "catalog": {
-        "list": ".row.tab-pane.active",
+        "list": "div[id = chapterList]",
         "booklet": {
-            "name": "p",
-            "list": "a"
+            "name": "p:nth-child(2n+1)",
+            "list": "~a"
         },
         "name": "p",
-        "chapter": "a@replace->$>?see_lz=1"
+        "chapter": "@attr->href"
     },
     "chapter": {
-        "content": "div.col-xs-12.m-b-30.forum-content,div.d_post_content_main>div.p_content,div.core_reply.j_lzl_wrapper>div> div > span:matchesOwn(楼)",
+        "content": "div.forum-content.mt-3,div[class =d_post_content j_d_post_content]",
         "purify": ["该楼层疑似违规已被系统折叠","隐藏此楼","查看此楼"]
     }
 }
