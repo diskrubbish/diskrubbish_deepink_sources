@@ -17,21 +17,21 @@
         "cover": "div.col-md-3 > div > a > img@attr->src",
         "summary": "div.description",
         "status": "",
-        "update": "li:contains(最新更新)>span",
-        "lastChapter": "div[id = chapterList] >a:last-child",
+        "update": "div.col-md-9.book-detail > ul > li:eq(5)",
+        "lastChapter": "div[id=chapterList]>:last-child",
         "catalog": ""
     },
     "catalog": {
-        "list": "div[id = chapterList]",
-        "booklet": {
-            "name": "p:nth-child(2n+1)",
-            "list": "~a"
-        },
-        "name": "p",
-        "chapter": "@attr->href"
+        "list": "div[id=chapterList]>a",
+        "name": "a",
+        "chapter": "a@attr->href"
     },
     "chapter": {
         "content": "div.forum-content.mt-3,div[class =d_post_content j_d_post_content]",
-        "purify": ["该楼层疑似违规已被系统折叠","隐藏此楼","查看此楼"]
+        "purify": [
+            "该楼层疑似违规已被系统折叠",
+            "隐藏此楼",
+            "查看此楼"
+        ]
     }
 }
