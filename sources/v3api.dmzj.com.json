@@ -22,13 +22,13 @@
         
     },
     "catalog": {
-        "list": "$.*",
+        "list": "$.[*].chapters[*]",
         "booklet": {
             "name": "$.volume_name",
-            "list": "$.chapters"
+            "list": "$.chapters[*]"
         },
-        "name": "$.*.chapter_name",
-        "chapter": "/novel/download/999999_${$.id}_${$.chapters.*.chapter_id}"
+        "name": ".chapter_name",
+        "chapter": "/novel/download/999999_${$.id}_${$.chapter_id}.txt"
     },
     "chapter": {
         "content": ""

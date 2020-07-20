@@ -33,6 +33,6 @@
     },
     "chapter": {
         "content": "p[class=chapter]",
-        "filter": ["@span"]
+        "filter": ["@span","@a"]
     }
 }
