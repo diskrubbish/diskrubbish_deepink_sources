@@ -1,0 +1,38 @@
+{
+    "name": "刺猬猫(WAP)",
+    "url": "https://wap.ciweimao.com/",
+    "version": 100,
+    "search": {
+        "url": "https://wap.ciweimao.com/book_list@post->keyword=${key}",
+        "charset": "utf-8",
+        "list": "ul[class=book-list]>li > a",
+        "name": "div > h3",
+        "author": "div > p[class=author]",
+        "summary": "div > p[class=desc]",
+        "cover": "img@attr->data-original",
+        "detail": "a@attr->href@replace->wap->www"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "p.update-state",
+        "update": "div.book-info > a > p",
+        "lastChapter": "div.book-info > a > p",
+        "catalog": "a[class=btn-more ly-fr]@attr->href"
+    },
+    "catalog": {
+        "list": ".book-chapter-box",
+        "booklet": {
+            "name": "h4",
+            "list": "ul>li"
+        },
+        "name": "a",
+        "chapter": "a@attr->href@replace->www.->mip."
+    },
+    "chapter": {
+        "content": "p[class=chapter]",
+        "filter": ["@span"]
+    }
+}
