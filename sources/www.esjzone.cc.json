@@ -33,6 +33,6 @@
         "login": "https://www.esjzone.cc/login.html",
         "cookie": "esjzone.cc",
         "verify": "https://www.esjzone.cc/my/profile.html",
-        "logged": "ul > li:nth-child(10) > a @equal->登出"
+        "logged": "div.offcanvas-wrapper > section > div > div.col-lg-8 > form > div.col-12 > div > a@equal->儲存更新"
     }
 }
