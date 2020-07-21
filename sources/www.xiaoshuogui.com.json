@@ -6,11 +6,11 @@
         "url": "https://www.xiaoshuogui.com/modules/article/search.php@post->searchkey=${key}",
         "charset": "gbk",
         "list": "dl[id=nr]",
-        "name": "dl>dd>h3>a",
+        "name": "dd>h3>a",
         "author": "",
-        "summary": "dl>dd.book_des",
-        "cover": "dt>a>img@attr->img _src",
-        "detail": "dl>dt>a"
+        "summary": "dd.book_des",
+        "cover": "dt>a>img@attr->_src",
+        "detail": "dt>a@attr->href"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
@@ -19,7 +19,7 @@
         "summary": "div[id=bookintro]",
         "status": "div[id=count]>ul>li:eq(2)",
         "update": "div[id=count]>ul>li:eq(3)",
-        "lastChapter": "meta[property=og:latest_chapter_name]@attr->content",
+        "lastChapter": "ul.chaw > li:nth-child(1) > a",
         "catalog": ""
     },
     "catalog": {
