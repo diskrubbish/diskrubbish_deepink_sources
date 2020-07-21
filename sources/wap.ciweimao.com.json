@@ -1,7 +1,7 @@
 {
     "name": "刺猬猫(WAP)",
     "url": "wap.ciweimao.com",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "https://wap.ciweimao.com/book_list@post->keyword=${key}",
         "charset": "utf-8",
