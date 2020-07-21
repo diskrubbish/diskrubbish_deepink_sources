@@ -1,7 +1,7 @@
 {
     "name": "刺猬猫(WAP)",
-    "url": "https://wap.ciweimao.com/",
-    "version": 100,
+    "url": "wap.ciweimao.com",
+    "version": 101,
     "search": {
         "url": "https://wap.ciweimao.com/book_list@post->keyword=${key}",
         "charset": "utf-8",
@@ -34,5 +34,12 @@
     "chapter": {
         "content": "p[class=chapter]",
         "filter": ["@span","@a"]
+    },
+    "auth": {
+        "login": "https://wap.ciweimao.com/signup/login",
+        "cookie": "ciweimao.com",
+        "verify": "https://wap.ciweimao.com/reader/my_info",
+        "logged": "a[class=logout]@equal->退出登录",
+        "vip": "#J_DingYueBox > h1@equal->本章是VIP章节，购买后才能阅读"
     }
 }

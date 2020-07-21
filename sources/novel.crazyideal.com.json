@@ -1,0 +1,34 @@
+{
+    "name": "雷姆轻小说(吾的轻小说)",
+    "url": "novel.crazyideal.com",
+    "version": 100,
+    "search": {
+        "url": "https://novel.crazyideal.com/search@post->searchkey=${key}",
+        "charset": "utf-8",
+        "list": "li[class=searchresult]",
+        "name": "div > a > h3",
+        "author": "div>p:eq(1)@match->(^[^ ]*)",
+        "summary": "div>p[class=searchresult_p]",
+        "cover": "div.img_span>a>img@attr->data-original",
+        "detail": "div[class=img_span]>a@attr->href"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "div.novel_info_main>img@attr->src",
+        "summary": "div.intro@text",
+        "status": "p > span:nth-child(3)",
+        "update": "div.flex.to100 > em",
+        "lastChapter": "div.flex.to100 > a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "ul[id=ul_all_chapters]>li",
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "article",
+        "page": "a[id=next_url]a@attr->href"
+    }
+}
