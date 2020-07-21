@@ -38,8 +38,8 @@
     "auth": {
         "login": "https://wap.ciweimao.com/signup/login",
         "cookie": "ciweimao.com",
-        "verify": "https://wap.ciweimao.com/reader/my_info",
-        "logged": "ul > li:nth-child(2) > a->我的书单",
+        "verify": "https://www.ciweimao.com/reader/my_info",
+        "logged": "div.info-box > a.btn.btn-md.btn-default->退出",
         "vip": "#J_DingYueBox > h1@equal->本章是VIP章节，购买后才能阅读"
     }
 }
