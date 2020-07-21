@@ -36,8 +36,8 @@
         "filter": ["@span","@a"]
     },
     "auth": {
-        "login": "https://wap.ciweimao.com/signup/login?redirect=https%3A%2F%2Fwap.ciweimao.com%2Freader%2Fmy_info",
-        "cookie": "wap.ciweimao.com",
+        "login": "https://wap.ciweimao.com/signup/login",
+        "cookie": "ciweimao.com",
         "verify": "https://wap.ciweimao.com/reader/my_info",
         "logged": "ul > li:nth-child(2) > a->我的书单",
         "vip": "#J_DingYueBox > h1@equal->本章是VIP章节，购买后才能阅读"
