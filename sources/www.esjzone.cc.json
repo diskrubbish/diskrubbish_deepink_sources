@@ -8,8 +8,8 @@
         "list": "div.col-xl-9.col-lg-8.p-r-30 > div.row > div ",
         "name": "div@attr->title",
         "author": "",
-        "cover": "div > div > a > div > div > img@attr->data-src",
-        "detail": "div> div > div > h5 > a@attr->href"
+        "cover": "div>div>a>div>div>div@attr->data-src",
+        "detail": "div>div>a@attr->href"
     },
     "detail": {
         "name": "div.col-md-9.book-detail > h2",
