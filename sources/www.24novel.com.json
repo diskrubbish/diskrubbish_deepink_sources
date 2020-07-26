@@ -1,6 +1,6 @@
 {
     "name": "时时小说网（需要梯子）",
-    "url": "http://www.24novel.com/",
+    "url": "www.24novel.com",
     "version": 104,
     "search": {
         "url": "http://www.24novel.com/modules/article/search.php@post->searchkey=${key}",
