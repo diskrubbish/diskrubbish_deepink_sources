@@ -29,6 +29,6 @@
     },
     "chapter": {
         "content": "article",
-        "page": "a[id=next_url]a@attr->href"
+        "page": "a[id=next_url]a@attr->href@match->下一页"
     }
 }
