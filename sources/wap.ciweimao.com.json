@@ -1,7 +1,7 @@
 {
     "name": "刺猬猫(WAP)",
     "url": "wap.ciweimao.com",
-    "version": 103,
+    "version": 105,
     "search": {
         "url": "https://wap.ciweimao.com/book_list@post->keyword=${key}",
         "charset": "utf-8",
@@ -33,7 +33,10 @@
     },
     "chapter": {
         "content": "p[class=chapter]",
-        "filter": ["@span","@a"]
+        "filter": [
+            "@span",
+            "@a"
+        ]
     },
     "auth": {
         "login": "https://wap.ciweimao.com/signup/login",
@@ -41,5 +44,227 @@
         "verify": "https://wap.ciweimao.com/reader/my_info",
         "logged": "body > div.container.per-homepage > a@equal->退出登录",
         "vip": "#J_DingYueBox > h1@equal->本章是VIP章节，购买后才能阅读"
-    }
+    },
+    "rank": [
+        {
+            "title": "点击榜",
+            "url": "https://www.ciweimao.com/rank-index/no-vip-click-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "收藏榜",
+            "url": "https://www.ciweimao.com/rank-index/favor-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "推荐榜",
+            "url": "https://www.ciweimao.com/rank-index/recommend-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "订阅榜",
+            "url": "https://www.ciweimao.com/rank-index/buy-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "月票榜",
+            "url": "https://www.ciweimao.com/rank-index/yp-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "吐槽榜",
+            "url": "https://www.ciweimao.com/rank-index/tsukkomi-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "吐槽榜",
+            "url": "https://www.ciweimao.com/rank-index/tsukkomi-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "新书榜",
+            "url": "https://www.ciweimao.com/rank-index/yp_new-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "刀片榜",
+            "url": "https://www.ciweimao.com/rank-index/blade-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        },
+        {
+            "title": "更新榜",
+            "url": "https://www.ciweimao.com/rank-index/get-update-most-${key}/${page}",
+            "page": 1,
+            "size": 10,
+            "list": "ol[class=rank-book-list]>li",
+            "name": "div>h3",
+            "author": "div>p:eq(1)",
+            "cover": "a>img@attr->data-original",
+            "summary": "div>p:eq(3)",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "week",
+                    "value": "周榜"
+                },
+                {
+                    "key": "month",
+                    "value": "月榜"
+                }
+            ]
+        }
+    ]
 }

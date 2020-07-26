@@ -1,0 +1,44 @@
+{
+    "name": "亲小说",
+    "url": "www.qinxiaoshuo.com",
+    "version": 101,
+    "search": {
+        "url": "https://www.qinxiaoshuo.com/search/?keyword=${key}",
+        "charset": "utf-8",
+        "list": "div[class=book]",
+        "name": "div[ class=book_info]>div[class=items]>h3",
+        "author": "div[class=book_info]>div[class=items]>div:eq(1)@replace->作者: ->",
+        "summary": "div[ class=book_info]>div[class=intro right]",
+        "cover": "a>img@attr->src",
+        "detail": "a@attr->href"
+    },
+    "detail": {
+        "name": "div.show_info > div > h1",
+        "author": "div.show_info > div > div[class=info_item]>div>a",
+        "cover": "div.show_info > img@attr->src",
+        "summary": "div.show_info > div > textarea",
+        "status": "#status",
+        "update": "div.show_info > div > div:nth-child(4) > div:nth-child(1)",
+        "lastChapter": "div.show_info > div > div:nth-child(4) > div:nth-child(2)@replace->最新章节：->",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "div[id=volume_list]>div[class=volumes]>div",
+        "booklet": {
+            "name": "div[class=volume_title flex_wrap]>span",
+            "list": "div[class=chapters flex_wrap]>div[class=chapter]"
+        },
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "#chapter_content",
+        "page": "a[class=qxs_btn]:eq(2)@match->下一页"
+    },
+    "auth": {
+        "login": "https://www.qinxiaoshuo.com/login/",
+        "cookie": "www.qinxiaoshuo.com",
+        "verify": "https://www.qinxiaoshuo.com/user",
+        "logged": "a.user_nav_active@equal->动态"
+    }
+}
