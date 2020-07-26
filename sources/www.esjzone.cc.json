@@ -9,7 +9,7 @@
         "name": "div@attr->title",
         "author": "",
         "cover": "div>div>a>div>div>div@attr->data-src",
-        "detail": "div>div>a@attr->href"
+        "detail": "div>div>h5>a@attr->href"
     },
     "detail": {
         "name": "div.col-md-9.book-detail > h2",
@@ -22,7 +22,7 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "div[id=chapterList]>a",
+        "list": "div[id=chapterList]",
         "name": "a@attr->data-title",
         "chapter": "a@attr->href"
     },
