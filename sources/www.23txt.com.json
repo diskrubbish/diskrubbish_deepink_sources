@@ -8,7 +8,7 @@
         "list": "div.result-list > div > div",
         "name": "h3",
         "author": "div>p:nth-child(1) > span:nth-child(2)",
-        "cover": "a>img",
+        "cover": "a>img@attr->src",
         "summary": "p[class=result-game-item-desc]",
         "detail": "h3 > a@attr->href"
     },
