@@ -23,9 +23,14 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "div[id=volume_list]>div[class=volumes]>div",
-        "name": "div[class=chapters flex_wrap]>div[class=chapter]>a",
-        "chapter": "div[class=chapters flex_wrap]>div[class=chapter]>a@attr->href"
+        "list": ".volume",
+        "orderBy": 0,
+        "booklet": {
+            "name": ".volume_title>span",
+            "list": ".chapters > div"
+        },
+        "name": "a",
+        "chapter": "a"
     },
     "chapter": {
         "content": "#chapter_content",
