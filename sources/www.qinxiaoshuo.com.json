@@ -1,7 +1,7 @@
 {
     "name": "亲小说",
     "url": "www.qinxiaoshuo.com",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "https://www.qinxiaoshuo.com/search/?keyword=${key}",
         "charset": "utf-8",
@@ -36,9 +36,9 @@
         "page": "a[class=qxs_btn]:eq(2)@match->下一页"
     },
     "auth": {
-        "login": "https://www.qinxiaoshuo.com/login/#/book/",
-        "cookie": "www.qinxiaoshuo.com",
-        "verify": "https://www.qinxiaoshuo.com/",
+        "login": "https://www.qinxiaoshuo.com/login/",
+        "cookie": "m.qinxiaoshuo.com",
+        "verify": "https://www.qinxiaoshuo.com/user/",
         "logged": "#menu_user > a:nth-child(5)@equal->退出  "
     }
 }
