@@ -23,10 +23,10 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "div[id=volume_list]>div[class=volumes]>div",
+        "list": ".volume",
         "booklet": {
-            "name": "div[class=volume_title flex_wrap]>span",
-            "list": "div[class=chapters flex_wrap]"
+            "name": ".volume_title>span",
+            "list": ".chapters"
         },
         "name": "div[class=chapter]>a",
         "chapter": "div[class=chapter]>a@attr->href"
