@@ -37,8 +37,8 @@
     },
     "auth": {
         "login": "https://www.qinxiaoshuo.com/login/",
-        "cookie": "m.qinxiaoshuo.com",
-        "verify": "https://www.qinxiaoshuo.com/user/",
-        "logged": "#menu_user > a:nth-child(5)@equal->退出  "
+        "cookie": "www.qinxiaoshuo.com",
+        "verify": "https://www.qinxiaoshuo.com/login/",
+        "logged": "#menu_user > a:contains(阅读记录)@equal->阅读记录"
     }
 }
