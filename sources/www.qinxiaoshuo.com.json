@@ -1,7 +1,7 @@
 {
     "name": "亲小说",
     "url": "www.qinxiaoshuo.com",
-    "version": 103,
+    "version": 104,
     "search": {
         "url": "https://www.qinxiaoshuo.com/search/?keyword=${key}",
         "charset": "utf-8",
@@ -26,10 +26,10 @@
         "list": "div[id=volume_list]>div[class=volumes]>div",
         "booklet": {
             "name": "div[class=volume_title flex_wrap]>span",
-            "list": "div[class=chapters flex_wrap]>div[class=chapter]"
+            "list": "div[class=chapters flex_wrap]"
         },
-        "name": "a",
-        "chapter": "a@attr->href"
+        "name": "div[class=chapter]>a",
+        "chapter": "div[class=chapter]>a@attr->href"
     },
     "chapter": {
         "content": "#chapter_content",
