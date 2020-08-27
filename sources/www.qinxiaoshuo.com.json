@@ -27,10 +27,10 @@
         "orderBy": 0,
         "booklet": {
             "name": ".volume_title>span",
-            "list": ".chapters"
+            "list": ".chapters > div > a"
         },
-        "name": "div>a",
-        "chapter": "div>a"
+        "name": "a",
+        "chapter": "a"
     },
     "chapter": {
         "content": "#chapter_content",
