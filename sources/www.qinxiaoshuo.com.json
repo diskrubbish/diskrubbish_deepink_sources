@@ -38,7 +38,7 @@
     },
     "auth": {
         "login": "https://www.qinxiaoshuo.com/login",
-        "cookie": "www.qinxiaoshuo.com",
+        "cookie": ".qinxiaoshuo.com",
         "verify": "https://www.qinxiaoshuo.com",
         "params": "token=${token}",
         "logged": "#menu_user > a:contains(个人中心)@equal->个人中心"
