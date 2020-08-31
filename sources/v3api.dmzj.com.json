@@ -22,15 +22,15 @@
         
     },
     "catalog": {
-        "list": "$.[*].chapters[*]",
+        "list": "$.*",
         "booklet": {
             "name": "$.volume_name",
-            "list": "$.chapters[*]"
+            "list": ""
         },
-        "name": ".chapter_name",
-        "chapter": "/novel/download/999999_${$.id}_${$.chapter_id}.txt"
+        "name": "$.chapters.*.chapter_name",
+        "chapter": "http://v3api.dmzj.com/novel/download/999999_${$.volume_id}_${$.chapters.*.chapter_id}.txt"
     },
     "chapter": {
-        "content": ""
+        "content": "${html}"
     }
 }
