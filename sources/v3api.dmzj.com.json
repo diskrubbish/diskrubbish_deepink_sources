@@ -25,10 +25,10 @@
         "list": "$.*",
         "booklet": {
             "name": "$.volume_name",
-            "list": ""
+            "list": "$.chapters"
         },
-        "name": "$.chapters.*.chapter_name",
-        "chapter": "http://v3api.dmzj.com/novel/download/999999_${$.volume_id}_${$.chapters.*.chapter_id}.txt"
+        "name": "$.chapter_name",
+        "chapter": "'http://v3api.dmzj.com/novel/download/999999_${$.volume_id}_+ ${$.chapter_id}.txt"
     },
     "chapter": {
         "content": "${html}"
