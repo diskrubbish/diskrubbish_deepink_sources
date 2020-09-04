@@ -30,5 +30,89 @@
     "chapter": {
         "content": "article",
         "page": "a[id=next_url]a@attr->href@match->下一页"
-    }
+    },
+    "rank": [
+        {
+            "title": "书库",
+            "page": 1,
+            "size": 10,
+            "url": "https://novel.crazyideal.com/xs/${page}/",
+            "list": "ul[class=flex]>li",
+            "name": "div>a>h2",
+            "author": "div>div@replace->@match->(^[^ ]*)",
+            "cover": "div.img_span>a>img@attr->data-original",
+            "summary": "div>p[class=indent]",
+            "detail": "div>a@attr->href"
+        },
+        {
+            "title": "分类",
+            "page": 1,
+            "size": 10,
+            "url": "https://novel.crazyideal.com/xs/${key}/${page}/",
+            "list": "ul[class=flex]>li",
+            "name": "div>a>h2",
+            "author": "div>div@replace->@match->(^[^ ]*)",
+            "cover": "div.img_span>a>img@attr->data-original",
+            "summary": "div>p[class=indent]",
+            "detail": "div>a@attr->href",
+            "categories": [
+                {
+                    "key": "1",
+                    "value": "电击文库"
+                },
+                {
+                    "key": "2",
+                    "value": "富士见文库"
+                },
+                {
+                    "key": "3",
+                    "value": "角川文库"
+                },
+                {
+                    "key": "4",
+                    "value": "MF文库J"
+                },
+                {
+                    "key": "5",
+                    "value": "Fami通文库"
+                },
+                {
+                    "key": "6",
+                    "value": "GA文库"
+                },
+                {
+                    "key": "7",
+                    "value": "HJ文库"
+                },
+                {
+                    "key": "8",
+                    "value": "一迅社"
+                },
+                {
+                    "key": "9",
+                    "value": "集英社"
+                },
+                {
+                    "key": "10",
+                    "value": "小学馆"
+                },
+                {
+                    "key": "11",
+                    "value": "讲谈社"
+                },
+                {
+                    "key": "12",
+                    "value": "少女文库"
+                },
+                {
+                    "key": "13",
+                    "value": "其他文库"
+                },
+                {
+                    "key": "14",
+                    "value": "游戏剧本"
+                }
+            ]
+        }
+    ]
 }

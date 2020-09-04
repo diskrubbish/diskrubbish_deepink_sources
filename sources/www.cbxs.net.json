@@ -1,0 +1,59 @@
+{
+    "name": "赤壁小说",
+    "url": "www.cbxs.net",
+    "version": 100,
+    "search": {
+        "url": "https://www.cbxs.net/e/search/index.php@post->show=title&tempid=1&keyboard=${key}",
+        "charset": "utf-8",
+        "list": "div.newslist > ul>li",
+        "name": "a:nth-child(2)",
+        "detail": "a:nth-child(2)@attr->href"
+    },
+    "detail": {
+        "name": "div[class=book-describe]>h1",
+        "author": "div[class=authorbooks]>a:nth-child(1)@match->(^[^作品集]*)",
+        "cover": "div.book-img > img@attr->src",
+        "summary": "div[class=m-bkcont]@match->(^[^\\[]*)",
+        "update": "div.book-describe > p:nth-child(2)@match->(^[^\/]*)",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "div.book-list.clearfix>dl",
+        "booklet": {
+            "name": "dt",
+            "list": "dd"
+        },
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "#nr1"
+    },
+    "rank": [
+        {
+            "title": "排行榜",
+            "size": 100,
+            "url": "https://www.cbxs.net/top/index.php?type=${key}",
+            "list": "div.bd>ul>li",
+            "name": "h2",
+            "author": "p>a",
+            "cover": "a>img@attr->src",
+            "summary": "p[class=intro]",
+            "detail": "a@attr->href",
+            "categories": [
+                {
+                    "key": "0",
+                    "value": "总点击榜"
+                },
+                {
+                    "key": "1",
+                    "value": "总推荐榜"
+                },
+                {
+                    "key": "2",
+                    "value": "总下载榜"
+                }
+            ]
+        }
+    ]
+}
