@@ -1,0 +1,32 @@
+{
+    "name": "米兔小说",
+    "url": "www.m2m2.net",
+    "version": 104,
+    "search": {
+        "url": "https://www.m2m2.net/search.html?keyword=${key}",
+        "charset": "utf-8",
+        "list": "ul[class=librarylist]>li",
+        "name": " div.pt-ll-r > p.info > span:nth-child(1) > a",
+        "author": " div.pt-ll-r > p.info > span:nth-child(2) > a",
+        "summary": " div.pt-ll-r > p.intro",
+        "cover": " div.pt-ll-l > a > img@attr->src",
+        "detail": "div.pt-ll-r > p.info > span:nth-child(1) > a@attr->href"
+    },
+    "detail": {
+        "name": "div.header.line > h1",
+        "author": "div.novelinfo-l > ul > li:nth-child(1) > a",
+        "cover": "div.novelinfo > div.novelinfo-r > a > img@attr->src",
+        "summary": "div.body.novelintro",
+        "status": "div.novelinfo-l > ul > li:nth-child(3)@replace->状态：->",
+        "lastChapter": "div.novelinfo-l > ul > li:nth-child(6)>a",
+        "catalog": "div.body.novel > div.operate > a.btn.btn-info@attr->href"
+    },
+    "catalog": {
+        "list": "ul[class=dirlist three clearfix]>li",
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "#chaptercontent>p"
+    }
+}
