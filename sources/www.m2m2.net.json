@@ -27,6 +27,7 @@
         "chapter": "a@attr->href"
     },
     "chapter": {
-        "content": "#chaptercontent>p"
+        "content": "#chaptercontent>p",
+        "filter": ["@img"]
     }
 }
