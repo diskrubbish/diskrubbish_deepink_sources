@@ -1,13 +1,13 @@
 {
     "name": "刺猬猫(WAP)",
     "url": "wap.ciweimao.com",
-    "version": 105,
+    "version": 106,
     "search": {
         "url": "https://wap.ciweimao.com/book_list@post->keyword=${key}",
         "charset": "utf-8",
         "list": "ul[class=book-list]>li > a",
         "name": "div > h3",
-        "author": "div > p[class=author]",
+        "author": "div > p[class=author]@match->(^[^\/]*)",
         "summary": "div > p[class=desc]",
         "cover": "img@attr->data-original",
         "detail": "a@attr->href@replace->wap->www"
