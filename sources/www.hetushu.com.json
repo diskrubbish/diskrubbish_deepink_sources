@@ -25,11 +25,11 @@
         "list": "#dir>*",
         "orderBy": 0,
         "name": "a",
-        "chapter": "*a@attr->href@replace->www->m"
+        "chapter": "*a@attr->href"
     },
     "chapter": {
         "content": "#content>div",
-        "filter": [
+        "filter": ["h2"
         ]
     }
 }
