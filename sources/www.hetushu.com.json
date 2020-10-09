@@ -22,15 +22,14 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "#dir",
+        "list": "#dir>*",
         "orderBy": 0,
-        "name": "*>a",
-        "chapter": "*>a@attr->href@replace->www->m"
+        "name": "a",
+        "chapter": "*a@attr->href@replace->www->m"
     },
     "chapter": {
-        "content": "#content",
+        "content": "#content>div",
         "filter": [
-            "@span"
         ]
     }
 }
