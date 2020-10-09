@@ -25,7 +25,7 @@
         "list": "#dir>*",
         "orderBy": 0,
         "name": "a",
-        "chapter": "*a@attr->href"
+        "chapter": "*a@attr->href@header->type:json"
     },
     "chapter": {
         "content": "#content>div",
