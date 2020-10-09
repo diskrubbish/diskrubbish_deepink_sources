@@ -1,0 +1,158 @@
+{
+    "name": "SF轻小说",
+    "url": "book.sfacg.com",
+    "version": 101,
+    "search": {
+        "url": "http://s.sfacg.com/?Key=${key}&S=1&SS=0",
+        "charset": "utf-8",
+        "list": "ul",
+        "name": "li:nth-child(2) > strong",
+        "author": "li:nth-child(2)@match->(?<=综合信息： )(.+)(?=/[0-9]{4}/)",
+        "cover": "img",
+        "detail": "li:nth-child(2) > strong > a"
+    },
+    "detail": {
+        "name": ".title > span:nth-child(1)",
+        "author": ".author-name",
+        "cover": ".left-part > .figure > .pic > a > img",
+        "summary": ".introduce", 
+        "status": ".count-detail > div:nth-child(1) > span:nth-child(2)@match->(?<=\\[)(.+)(?=\\])",
+        "update": ".count-detail > div:nth-child(2) > span@match->(?<=更新：)(.+)",
+        "lastChapter": ".chapter-info > h3 > a",
+        "catalog": ".btn-row > a:nth-child(1)"
+    },
+    "catalog": {
+        "list": ".story-catalog",
+        "orderBy": 0,
+        "booklet": {
+            "name": ".catalog-title@match->(?<=】 )(.+)",
+            "list": "li"
+        },
+        "name": "a@attr->title",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".article-content"
+    },
+    "auth": {
+        "login": "https://m.sfacg.com/login",
+        "cookie": "sfacg.com",
+        "verify": "https://m.sfacg.com/my/",
+        "logged": "span:contains(退出登录)@equal->退出登录",
+        "vip": "#article > .pay-section > .pay-bar > p.text@equal->本书以下章节需要付费阅读，请支持作者的汗血耕耘！",
+        "buy": "#orderSingle@equal->订阅本章"
+    },
+    "rank": [
+        {
+            "title": "人气榜",
+            "url": "https://m.sfacg.com/rank/original.html",
+            "page": 1,
+            "size": 20,
+            "list": "ul.book_list",
+            "name": "#listtitle",
+            "author": "a > li:nth-child(2) > div:nth-child(3)@match->(.+)(?= /)",
+            "cover": "img",
+            "detail": "a@attr->href@replace->m.sfacg.com/b/->book.sfacg.com/Novel/"
+        },
+        {
+            "title": "热销榜",
+            "url": "https://m.sfacg.com/rank/sale.html",
+            "page": 1,
+            "size": 20,
+            "list": "ul.book_list",
+            "name": "#listtitle",
+            "author": "a > li:nth-child(2) > div:nth-child(3)@match->(.+)(?= /)",
+            "cover": "img",
+            "detail": "a@attr->href@replace->m.sfacg.com/b/->book.sfacg.com/Novel/"
+        },
+        {
+            "title": "新书榜",
+            "url": "https://m.sfacg.com/rank/new.html",
+            "page": 1,
+            "size": 20,
+            "list": "ul.book_list",
+            "name": "#listtitle",
+            "author": "a > li:nth-child(2) > div:nth-child(3)@match->(.+)(?= /)",
+            "cover": "img",
+            "detail": "a@attr->href@replace->m.sfacg.com/b/->book.sfacg.com/Novel/"
+        },
+        {
+            "title": "日轻榜",
+            "url": "https://m.sfacg.com/rank/jp.html",
+            "page": 1,
+            "size": 20,
+            "list": "ul.book_list",
+            "name": "#listtitle",
+            "author": "a > li:nth-child(2) > div:nth-child(3)@match->(.+)(?= /)",
+            "cover": "img",
+            "detail": "a@attr->href@replace->m.sfacg.com/b/->book.sfacg.com/Novel/"
+        },
+        {
+            "title": "收藏榜",
+            "url": "https://m.sfacg.com/rank/bm.html",
+            "page": 1,
+            "size": 20,
+            "list": "ul.book_list",
+            "name": "#listtitle",
+            "author": "a > li:nth-child(2) > div:nth-child(3)@match->(.+)(?= /)",
+            "cover": "img",
+            "detail": "a@attr->href@replace->m.sfacg.com/b/->book.sfacg.com/Novel/"
+        },
+        {
+            "title": "月票榜",
+            "url": "https://m.sfacg.com/rank/ticket.html",
+            "page": 1,
+            "size": 20,
+            "list": "ul.book_list",
+            "name": "#listtitle",
+            "author": "a > li:nth-child(2) > div:nth-child(3)@match->(.+)(?= /)",
+            "cover": "img",
+            "detail": "a@attr->href@replace->m.sfacg.com/b/->book.sfacg.com/Novel/"
+        },
+        {
+            "title": "全部",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=${key}&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "categories": [
+                {"key": "-1", "value": "全部"}, {"key": "21", "value": "魔幻"},
+                {"key": "22", "value": "玄幻"}, {"key": "23", "value": "古风"}, 
+                {"key": "24", "value": "科幻"}, {"key": "25", "value": "校园"}, 
+                {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
+                {"key": "28", "value": "同人"}, {"key": "29", "value": "悬疑"}
+            ],
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title":"连载",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=${key}&&if=0&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "categories": [
+                {"key": "-1", "value": "全部"}, {"key": "21", "value": "魔幻"},
+                {"key": "22", "value": "玄幻"}, {"key": "23", "value": "古风"}, 
+                {"key": "24", "value": "科幻"}, {"key": "25", "value": "校园"}, 
+                {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
+                {"key": "28", "value": "同人"}, {"key": "29", "value": "悬疑"}
+            ],
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title":"完结",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=${key}&&if=1&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "categories": [
+                {"key": "-1", "value": "全部"}, {"key": "21", "value": "魔幻"},
+                {"key": "22", "value": "玄幻"}, {"key": "23", "value": "古风"},
+                {"key": "24", "value": "科幻"}, {"key": "25", "value": "校园"},
+                {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
+                {"key": "28", "value": "同人"}, {"key": "29", "value": "悬疑"}
+            ],
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        }
+    ]
+} 
