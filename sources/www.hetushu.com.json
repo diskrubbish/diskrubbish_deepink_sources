@@ -24,13 +24,13 @@
     "catalog": {
         "list": "#dir",
         "orderBy": 0,
-        "name": "dt>a,dd>a",
-        "chapter": "dt>a,dd>a"
+        "name": "*>a",
+        "chapter": "*>a@attr->href@replace->www->m"
     },
     "chapter": {
         "content": "#content",
         "filter": [
-            "@h2"
+            "@span"
         ]
     }
 }
