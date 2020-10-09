@@ -23,13 +23,9 @@
     },
     "catalog": {
         "list": "#dir",
-        "booklet": {
-            "name": "dt",
-            "list": "dd,a"
-        },
         "orderBy": 0,
-        "name": "a",
-        "chapter": "a"
+        "name": "dt>a,dd>a",
+        "chapter": "dt>a,dd>a@header->User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 Edg/85.0.564.70"
     },
     "chapter": {
         "content": "#content",
