@@ -1,35 +1,36 @@
-	{
-    "name": "和图书",
-    "url": "www.hetushu.com",
-    "version": 103,
-    "search": {
-        "url": "https://www.hetushu.com/book/search.php?keyword=${key}",
-        "charset": "utf-8",
-        "list": ".list > dd",
-        "name": "dd > h4 > a",
-        "author": "dd > h4 > span@match->(?<=/ )(.+)(?= /)",
-        "cover": "dd > a > img",
-        "detail": "dd > a"
-    },
-    "detail": {
-        "name": ".book_info > h2",
-        "author": ".book_info > div:nth-child(3) > a",
-        "cover": ".book_info > img",
-        "summary": ".intro",
-        "status": "",
-        "update": "",
-        "lastChapter": "",
-        "catalog": ""
-    },
-    "catalog": {
-        "list": "#dir>*",
-        "orderBy": 0,
-        "name": "a",
-        "chapter": "*a@attr->href@header->type:json"
-    },
-    "chapter": {
-        "content": "#content>div",
-        "filter": ["h2"
-        ]
+    {
+        "name": "和图书",
+        "url": "www.hetushu.com",
+        "version": 103,
+        "search": {
+            "url": "https://www.hetushu.com/book/search.php?keyword=${key}@header->User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 Edg/85.0.564.70",
+            "charset": "utf-8",
+            "list": ".list > dd",
+            "name": "dd > h4 > a",
+            "author": "dd > h4 > span@match->(?<=/ )(.+)(?= /)",
+            "cover": "dd > a > img",
+            "detail": "dd > a"
+        },
+        "detail": {
+            "name": ".book_info > h2",
+            "author": ".book_info > div:nth-child(3) > a",
+            "cover": ".book_info > img",
+            "summary": ".intro",
+            "status": "",
+            "update": "",
+            "lastChapter": "",
+            "catalog": ""
+        },
+        "catalog": {
+            "list": "#dir>*",
+            "orderBy": 0,
+            "name": "a",
+            "chapter": "*a@attr->href"
+        },
+        "chapter": {
+            "content": "#content>div",
+            "filter": [
+                "h2"
+            ]
+        }
     }
-}
