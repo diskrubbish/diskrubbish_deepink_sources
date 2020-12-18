@@ -1,7 +1,7 @@
 {
     "name": "ESJ",
     "url": "www.esjzone.cc",
-    "version": 113,
+    "version": 114,
     "search": {
         "url": "https://www.esjzone.cc/tags/${key}/",
         "charset": "utf-8",
@@ -14,7 +14,7 @@
     },
     "detail": {
         "name": "div.col-md-9.book-detail > h2",
-        "author": "ul[class=list-unstyled mb-2 book-detail]> li:nth-child(1) > a",
+        "author": "div.col-md-9.book-detail > ul > li:nth-child(2) > a",
         "cover": "div.col-md-3 > div > a > img@attr->src",
         "summary": "div.description",
         "status": "",
@@ -38,16 +38,22 @@
     },
     "rank": [
         {
-            "title": "日轻小说",
+            "title": "日轻",
             "page": 1,
             "size": 20,
             "url": "https://www.esjzone.cc/list/${page}.html"
         },
         {
-            "title": "原创小说",
+            "title": "原创",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.cc/creation/${page}.html"
+            "url": "https://www.esjzone.cc/list-21/${page}.html"
+        },
+        {
+            "title": "韩轻",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.esjzone.cc/list-31//${page}.html"
         },
         {
             "title": "分类",
@@ -125,7 +131,7 @@
                 },
                 {
                     "key": "TS",
-                    "value": "TS/"
+                    "value": "TS"
                 },
                 {
                     "key": "百合",
