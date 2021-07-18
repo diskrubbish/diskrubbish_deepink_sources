@@ -1,16 +1,16 @@
 {
     "name": "天籁小说网",
     "url": "www.23txt.com",
-    "version": 102,
+    "version": 103,
     "search": {
-        "url": "https://www.23txt.com/search.php?q=${key}",
+        "url": "https://m.23txt.com/search.php?q=${key}",
         "charset": "utf-8",
         "list": "div.result-list > div > div",
         "name": "h3",
         "author": "div>p:nth-child(1) > span:nth-child(2)",
         "cover": "a>img@attr->src",
         "summary": "p[class=result-game-item-desc]",
-        "detail": "h3 > a@attr->href"
+        "detail": "h3 > a@attr->href@replace->m\\.->www\\."
     },
     "detail": {
         "cover": "#fmimg > img",

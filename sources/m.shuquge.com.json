@@ -1,7 +1,7 @@
 {
     "name": "书趣阁",
-    "url": "m.loveyuedu.com",
-    "version": 100,
+    "url": "m.shuquge.com",
+    "version": 101,
     "search": {
         "url": "http://m.shuquge.com/search.php@post->searchkey=${key}",
         "charset": "utf-8",

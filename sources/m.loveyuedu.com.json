@@ -1,7 +1,7 @@
 {
     "name": "爱阅读",
     "url": "m.loveyuedu.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://m.loveyuedu.com/s.php@post->type=articlename&s=${key}",
         "charset": "gbk",
@@ -22,26 +22,6 @@
         "page": "div > span.right > a@attr->href"
     },
     "chapter": {
-        "content": "#novelcontent",
-        "purify": [
-            "请记住本书.*|.*免费阅读！",
-            "爱?阅读www.loveyuedu.com?",
-            "「WWW.LOVEYUEDU.COM」",
-            "←←？爱？阅？读Шww.loveÝueÐu.Çom→→",
-            "m.loveyuedu.com",
-            "(爱阅读",
-            "Шшш.LOVEYUEDU.?Om",
-            "www.loveyuedu.com)",
-            "↙↙Шww.loveYueDu.?om↘↘",
-            "〖?爱阅读m.loveyuedu.com〗",
-            "〖?爱阅读www.loveyuedu.com〗",
-            "「?愛阅读l○ve?ueDu.С〇М」",
-            "〖?愛阅讀www.loveyuedu.com〗",
-            "↖↖www.loveyuedu.com↗↗",
-            "『+爱+阅读Шww.loveYueDu.?om』",
-            "爱阅读Шww.loveYueDu.?om",
-            "「?爱阅读m.loveyuedu.com」",
-            "L〇Vё?UEDU.C〇М"
-        ]
+        "content": "#novelcontent"
     }
 }
