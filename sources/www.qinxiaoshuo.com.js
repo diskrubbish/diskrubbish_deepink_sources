@@ -76,7 +76,7 @@ const chapter = (url) => {
   let response = GET(url);
   let $ = JSON.parse(response);
   $.Chapter.Chapter_content.forEach((p) => {
-    array.push($.Chapter.Chapter_content[p]);
+    array.push(p);
   });
   let content = array.toLocaleString("\n");
 
@@ -86,5 +86,5 @@ const chapter = (url) => {
 var bookSource = JSON.stringify({
   name: "亲小说",
   url: "qinxiaoshuo.com",
-  version: 105,
+  version: 106,
 });
