@@ -7,17 +7,16 @@
 
 ~~准备用JS重写一下，但是依然很菜~~
 
-| 网站名称   | 网址                | 目前状态   | 备注                |
-| ---------- | ------------------- | ---------- | ------------------- |
-| 妙笔阁     | www.imiaobige.com   | 存活       |                     |
-| 天籁小说网 | www.23txt.com       | 存活       |                     |
-| 赤壁文学   | www.cbxs.net        | 大概率寄了 |证书过期|
-| ESJ        | www.esjzone.cc      | 存活       | 1.3有分类，体验最佳 |
-| 书趣阁     | m.shuquge.com       | 存活       |                     |
-| 爱阅读     | m.loveyuedu.com     | 存活       |                     |
-| 都来读 | www.dldxs.cc | 存活 | |
-| 亲小说     | www.qinxiaoshuo.com | 存活   | 使用JS，仅限2.0 |
-| 动漫之家   | v3api.dmzj.com      | 大概鸽了   | 学了点JS，在做  |
-
-
+| 网站名称   | 网址                | 书源类型            | 目前状态   | 备注                |
+| ---------- | ------------------- | ---------- | ------------------- | ---------- |
+| 妙笔阁     | www.imiaobige.com   | JSON | 存活       |                     |
+| 天籁小说网 | www.23txt.com       | JSON   | 存活       |                     |
+| ESJ        | www.esjzone.cc      | JSON  | 存活       | 1.3有分类，体验最佳 |
+| 书趣阁     | m.shuquge.com       | JSON   | 存活       |                     |
+| 爱阅读     | m.loveyuedu.com     | JSON | 存活       |                     |
+| 都来读 | www.dldxs.cc | JSON | 存活 | |
+| 疯狂小说 | www.fkxs.net | JSON | 存活 | |
+| 亲小说     | www.qinxiaoshuo.com | JS | 存活   | 仅限2.0 |
+| 动漫之家   | v3api.dmzj.com      | JS    | 鸽了   | V3已经被弃用，也许会研究一下V4的解密 |
+| 赤壁文学 | www.cbxs.net | JSON | 寄 | 搜索跪了 |
 
