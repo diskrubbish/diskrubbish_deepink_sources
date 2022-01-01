@@ -1,5 +1,5 @@
 # diskrubbish's deepink sources
-写着玩，写的还很菜，所以一直不敢给厚墨官方提交...
+写着玩，写的还很菜，基本上都是套模板或者抄（
 
 目前阵亡率比较惨重，已经不能用或者官方添加的书源放在bak里面。
 
@@ -7,16 +7,19 @@
 
 ~~准备用JS重写一下，但是依然很菜~~
 
-| 网站名称   | 网址                | 书源类型            | 目前状态   | 备注                |
-| ---------- | ------------------- | ---------- | ------------------- | ---------- |
-| 妙笔阁     | www.imiaobige.com   | JSON | 存活       |                     |
-| 天籁小说网 | www.23txt.com       | JSON   | 存活       |                     |
-| ESJ        | www.esjzone.cc      | JSON  | 存活       | 1.3有分类，体验最佳 |
-| 书趣阁     | m.shuquge.com       | JSON   | 存活       |                     |
-| 爱阅读     | m.loveyuedu.com     | JSON | 存活       |                     |
-| 都来读 | www.dldxs.cc | JSON | 存活 | |
-| 疯狂小说 | www.fkxs.net | JSON | 存活 | |
-| 亲小说     | www.qinxiaoshuo.com | JS | 存活   | 仅限2.0 |
-| 动漫之家   | v3api.dmzj.com      | JS    | 鸽了   | V3已经被弃用，也许会研究一下V4的解密 |
-| 赤壁文学 | www.cbxs.net | JSON | 寄 | 搜索跪了 |
+JS书源仅限厚墨2.0+，如没有意外以后都只制作js书源。
+
+| 网站名称   | 类型              | 网址                | 书源类型            | 目前状态   | 备注                |
+| ---------- | ------------------- | ---------- | ------------------- | ---------- | ---------- |
+| 妙笔阁     | 通用 | www.imiaobige.com   | JSON | 存活       |                     |
+| 天籁小说网 | 通用     | www.23txt.com     | JSON   | 寄     | 已无法访问 |
+| ESJ        | 厕纸    | www.esjzone.cc      | JSON  | 寄/1.3可用 | 目前esj的小说被大量和谐，原来的小说基本上都没了，所以我也不维护了，笑，~~自备梯子~~ |
+| 书趣阁     | 通用     | 通用[m.shuquge.com]() | JSON   | 寄      | 已经无法访问 |
+| 爱阅读     | 通用   | [m.loveyuedu.com]() | JSON |        |                     |
+| 都来读 | 通用 | www.dldxs.cc | JSON | 存活 | |
+| 疯狂小说 | 通用 | www.fkxs.net | JSON | 存活 | |
+| 亲小说     | 厕纸 | www.qinxiaoshuo.com | JS | 存活   | 用的是别人的api，随时会跪，且用且珍惜吧（ |
+| 369读书 | 经典文学 | http://www.dushu369.com/ |  |  | 格式可能有一定问题，就拜托大家自行用屏蔽功能解决了 |
+| 动漫之家   |       | v3api.dmzj.com      | JS  |            | 厚墨不支持RSA解密，寄                                        |
+| 赤壁文学 | 经典文学 | www.cbxs.net | JSON | 寄 | 已经无法访问 |
 
