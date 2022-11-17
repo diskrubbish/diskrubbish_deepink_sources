@@ -1,9 +1,9 @@
 {
     "name": "ESJ",
-    "url": "www.esjzone.net",
-    "version": 117,
+    "url": "www.esjzone.me",
+    "version": 118,
     "search": {
-        "url": "https://www.esjzone.net/tags/${key}/",
+        "url": "https://www.esjzone.me/tags/${key}/",
         "charset": "utf-8",
         "list": "div.col-xl-9 > div.row>div",
         "name": " div > div > h5 > a",
@@ -31,9 +31,9 @@
         "content": "div.forum-content.mt-3,div[class =d_post_content j_d_post_content]"
     },
     "auth": {
-        "login": "https://www.esjzone.net/login.html",
-        "cookie": "esjzone.net",
-        "verify": "https://www.esjzone.net/my/profile.html",
+        "login": "https://www.esjzone.me/login.html",
+        "cookie": "esjzone.me",
+        "verify": "https://www.esjzone.me/my/profile.html",
         "logged": "div.offcanvas-wrapper > section > div > div.col-lg-8 > form > div.col-12 > div > a@equal->儲存更新"
     },
     "rank": [
@@ -41,7 +41,7 @@
             "title": "全部",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.net/${key}/${page}.html",
+            "url": "https://www.esjzone.me/${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
@@ -81,7 +81,7 @@
             "title": "日轻",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.net/${key}/${page}.html",
+            "url": "https://www.esjzone.me/${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
@@ -121,7 +121,7 @@
             "title": "原创",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.net/${key}/${page}.html",
+            "url": "https://www.esjzone.me/${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
@@ -161,7 +161,7 @@
             "title": "韩轻",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.net/${key}/${page}.html",
+            "url": "https://www.esjzone.me/${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
@@ -201,7 +201,7 @@
             "title": "分类",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.net/tags/${key}/${page}.html",
+            "url": "https://www.esjzone.me/tags/${key}/${page}.html",
             "categories": [
                 {
                     "value": "r15",
