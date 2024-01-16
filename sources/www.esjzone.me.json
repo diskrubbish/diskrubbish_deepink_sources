@@ -32,7 +32,7 @@
     },
     "auth": {
         "login": "https://www.esjzone.me/my/login",
-        "cookie": ".www.esjzone.me",
+        "cookie": ".esjzone.me",
         "verify": "https://www.esjzone.me/my/profile",
         "logged": "li.has-children:nth-child(2) > span:nth-child(1) > a:nth-child(1) > span:nth-child(1)@equal->會員專區"
     },
