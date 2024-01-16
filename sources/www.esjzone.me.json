@@ -1,7 +1,7 @@
 {
     "name": "ESJ",
     "url": "www.esjzone.me",
-    "version": 118,
+    "version": 119,
     "search": {
         "url": "https://www.esjzone.me/tags/${key}/",
         "charset": "utf-8",
@@ -31,10 +31,10 @@
         "content": "div.forum-content.mt-3,div[class =d_post_content j_d_post_content]"
     },
     "auth": {
-        "login": "https://www.esjzone.me/login.html",
+        "login": "https://www.esjzone.me/my/login",
         "cookie": "esjzone.me",
         "verify": "https://www.esjzone.me/my/profile.html",
-        "logged": "div.offcanvas-wrapper > section > div > div.col-lg-8 > form > div.col-12 > div > a@equal->儲存更新"
+        "logged": "div.offcanvas-wrapper > section > div > div.col-lg-8 > form > div.col-12 > div > a"
     },
     "rank": [
         {
