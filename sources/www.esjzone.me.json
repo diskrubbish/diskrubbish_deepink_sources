@@ -1,7 +1,7 @@
 {
     "name": "ESJ",
     "url": "www.esjzone.me",
-    "version": 119,
+    "version": 120,
     "search": {
         "url": "https://www.esjzone.me/tags/${key}/",
         "charset": "utf-8",
